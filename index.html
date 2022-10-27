@@ -31,10 +31,15 @@
      document.getElementById('butondark').style.color = 'white'
      document.body.style.backgroundColor = 'lightGray'
      document.body.style.color = 'Black'
-     document.getElementById('1p').style.borderColor = 'Black'
      document.getElementById('1s').style.borderColor = 'Black'
-     document.getElementById('1p').style.backgroundColor = 'white'
-     document.getElementById('1p').style.color = 'black'">
+     const postelements = document.getElementsByClassName('posts')
+     var n = -1
+     for (i in postelements){
+         n = n+1
+         postelements[n].style.borderColor = 'Black'
+         postelements[n].style.backgroundColor = 'white'
+         postelements[n].style.color = 'black'
+        }">
      light</button>
     </td>
     <td>
@@ -51,10 +56,15 @@
      document.getElementById('butondark').style.borderWidth = '2px'
      document.body.style.backgroundColor = '#0b172a'
      document.body.style.color = 'white'
-     document.getElementById('1p').style.borderColor = 'Cyan'
      document.getElementById('1s').style.borderColor = 'Cyan'
-     document.getElementById('1p').style.backgroundColor = '#0b172a'
-     document.getElementById('1p').style.color = 'white'">
+     const postelementsi = document.getElementsByClassName('posts')
+     var ni = -1
+     for (i in postelementsi){
+         ni = ni+1
+         postelementsi[ni].style.borderColor = 'Cyan'
+         postelementsi[ni].style.backgroundColor = '#0b172a'
+         postelementsi[ni].style.color = 'white'
+        }">
     dark</button>
     </td>
     </tr>
@@ -67,15 +77,20 @@
   <div class="separator" id="1s">
     <h1>posts</h1>
   </div>
-
-    <div class="posts" id="1p">
+    <div class="posts">
+      <h2 style="text-align: center">themes fixed</h2>
+      <p>27.10.2022</p>
+      <p>The theme Switch is finally working.</p>
+      <p>The Switch are 2 buttons with css and js.</p>
+    </div>
+    <div class="posts">
       <h2 style="text-align: center">The first post</h2>
       <p>26.10. 2022</p>
       <p>This webpage is in development.</p>
       <p>The theme toggle is broken.</p>
       <p>On this page are testing post.</p>
     </div>
-    <div class="posts"id="1p">
+    <div class="posts">
       <h2 style="text-align: center">hedder</h2>
       <p>test</p>
       <p>test</p>
@@ -95,7 +110,7 @@
       <p>test</p>
       <p>test</p>
     </div>
-    <div class="posts"id="1p">
+    <div class="posts">
       <h2 style="text-align: center">hedder</h2>
       <p>test</p>
       <p>test</p>
