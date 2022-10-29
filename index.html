@@ -29,7 +29,9 @@
      document.getElementById('butonlight').style.borderColor = 'Cyan'
      document.getElementById('butonlight').style.color = 'Black'
      document.getElementById('butondark').style.color = 'white'
-     document.body.style.backgroundColor = 'lightGray'
+     document.body.style.backgroundColor = 'white'
+     document.getElementById('2s').style.backgroundColor = 'lightGray'
+     document.getElementById('2s').style.borderColor = 'black'
      document.body.style.color = 'Black'
      document.getElementById('1s').style.borderColor = 'Black'
      const postelements = document.getElementsByClassName('posts')
@@ -51,12 +53,14 @@
      onclick="document.getElementById('butonlight').style.backgroundColor = 'black'
      document.getElementById('butondark').style.backgroundColor = 'Cyan'
      document.getElementById('butonlight').style.borderWidth = '0px'
-     document.getElementById('butondark').style.color = 'Black'
+     document.getElementById('butondark').style.color = 'black'
      document.getElementById('butonlight').style.color = 'white'
      document.getElementById('butondark').style.borderWidth = '2px'
      document.body.style.backgroundColor = '#0b172a'
      document.body.style.color = 'white'
      document.getElementById('1s').style.borderColor = 'Cyan'
+     document.getElementById('2s').style.backgroundColor = '#04092e'
+     document.getElementById('2s').style.borderColor = 'Cyan'
      const postelementsi = document.getElementsByClassName('posts')
      var ni = -1
      for (i in postelementsi){
@@ -77,6 +81,15 @@
   <div class="separator" id="1s">
     <h1>posts</h1>
   </div>
+   <div class="postbackround" id="2s">
+
+     <div class="posts">
+       <h2 style="text-align:center">better themes</h2>
+       <p>29.10.2022</p>
+       <p>themes updated</p>
+       <p>theme Switch was rendering difrently in chrome then in firefox</p>
+       <p>I fix it using css</p>
+     </div>
     <div class="posts">
       <h2 style="text-align: center">themes fixed</h2>
       <p>27.10.2022</p>
@@ -130,5 +143,6 @@
       <p>test</p>
       <p>test</p>
     </div>
+   </div>
   </body>
 </html>
