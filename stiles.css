@@ -65,7 +65,8 @@ body{
 }
 .themetogle td{
   padding:3px;
-  font-size: 20px;
+  font-size: 15px;
+  text-size-adjust: none;
 
 }
 .postbackround{
